@@ -1,0 +1,150 @@
+:root {
+  --low-black: #2a2c20;
+  --lower-black: rgb(71, 34, 39);
+  --orange: rgb(255, 136, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body, #root {
+  height: 100%;
+  background-color: #464a35;
+}
+
+header {
+  background-color: #464a35;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 66px 30px 10px #000000cf;
+}
+
+.wholeLogo {
+  position: relative;
+  left: -7%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.nomeSite {
+  color: var(--orange);
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.logo {
+  height: 100%;
+  left: -100%;
+}
+
+.busca {
+  height: 8vh;
+  background-color: #5f6350;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spanBusca {
+  height: 50%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  background-color: #a06b00;
+  border-radius: .6rem;
+  transition: 0.2s;
+}
+
+.spanBusca:focus-within {
+  width: 40%;
+  outline: .15rem solid var(--orange);
+}
+
+.spanBusca:focus-within > .iconBusca {
+  position: relative;
+  left: 0;
+}
+
+.spanBusca input {
+  display: inline;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: .6rem;
+}
+
+.spanBusca input:focus {
+  outline: none;
+}
+
+.lengthODAS {
+  padding: .1rem 0 .5rem 0;
+  background-color: #5f6350;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.boxFlexivel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.boxODAS {
+  max-height: 50rem;
+  width: 40%;
+  grid-template-rows: repeat(auto-fill, minmax(600px, 1fr));
+  margin: 1rem;
+}
+
+.boxODAS:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.blockODAS {
+  height: 100%;
+  width: 100%;
+}
+
+.dadosODA {
+  display: grid;
+  height: 100%;
+  /* padding: 1rem; */
+  border-radius: 1rem;
+  box-shadow: 0 0 .3rem .1rem var(--lower-black);
+  background-color: rgba(220, 255, 255, 0.11);
+  background-color: #fff;
+  gap: 30px;
+}
+
+.dadosODA * {
+  margin: .5rem;
+}
+
+.dadosODA {
+  max-height: 50rem;
+  margin: 1rem;
+  opacity: 1;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  color: #fff;
+  background-color: var(--low-black);
+}
